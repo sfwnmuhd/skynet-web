@@ -3,24 +3,25 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 // Import client logos
-import alraiqa from '../assets/clients/al raiqa.jpg'
+import alraiqa from '../assets/clients/al raiqa.png'
 import alrawabi from '../assets/clients/AL RAWABI GROUP.png'
-import aliftrading from '../assets/clients/aliftrading.jpg'
+import aliftrading from '../assets/clients/aliftrading.png'
 import aljazeera from '../assets/clients/aljazeeera.jpg'
-import asianbc from '../assets/clients/asianbc.jpg'
-import bestcare from '../assets/clients/best care pharmacy.jpg'
-import bluebell from '../assets/clients/bluebell.jpg'
-import chittulli from '../assets/clients/chittulli.jpg'
-import fifitrading from '../assets/clients/fifi trading.jpg'
-import goodwill from '../assets/clients/goodwill.jpg'
-import hardnsoft from '../assets/clients/hardnsoft.jpg'
-import lusail from '../assets/clients/lusailinsurance.jpg'
-import mubarak from '../assets/clients/mubarak.jpg'
-import royalmark from '../assets/clients/royalmark.jpg'
-import techstar from '../assets/clients/techstar.jpg'
-import topex from '../assets/clients/topex.jpg'
-import topsy from '../assets/clients/topsy.jpg'
-import zienpharma from '../assets/clients/zienpharma.jpg'
+import asianbc from '../assets/clients/asianbc.png'
+import bestcare from '../assets/clients/best care pharmacy.png'
+import bluebell from '../assets/clients/bluebell.png'
+import chittulli from '../assets/clients/chittulli.png'
+import fifitrading from '../assets/clients/fifi trading.png'
+import goodwill from '../assets/clients/goodwill.png'
+import hardnsoft from '../assets/clients/hardnsoft.png'
+import lusail from '../assets/clients/lusailinsurance.png'
+import mubarak from '../assets/clients/mubarak.png'
+import royalmark from '../assets/clients/royalmark.png'
+import techstar from '../assets/clients/techstar.png'
+import topex from '../assets/clients/topex.png'
+import topsy from '../assets/clients/topsy.png'
+import zienpharma from '../assets/clients/zienpharma.png'
+import alras from '../assets/clients/alras.png'
 
 const Header = () => {
   const clientLogos = [
@@ -41,7 +42,8 @@ const Header = () => {
     { name: 'Tech Star', logo: techstar },
     { name: 'Topex', logo: topex },
     { name: 'Topsy', logo: topsy },
-    { name: 'Zien Pharma', logo: zienpharma }
+    { name: 'Zien Pharma', logo: zienpharma },
+    { name: 'Al Ras', logo: alras}
   ]
 
   return (
@@ -251,7 +253,7 @@ const Header = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className='mt-8 pb-8'
+          className='mt-20 pb-8'
         >
           <div className='text-center mb-8'>
             <p className='text-sm font-semibold text-gray-500 uppercase tracking-wider'>
@@ -277,13 +279,13 @@ const Header = () => {
               {[...clientLogos, ...clientLogos].map((client, index) => (
                 <motion.div
                   key={`${client.name}-${index}`}
-                  whileHover={{ scale: 1.1 }}
-                  className='flex-shrink-0 w-28 h-12 flex items-center justify-center transition-all duration-300 group'
+                  
+                  className='flex-shrink-0 w-28 h-16 flex items-center justify-center transition-all duration-300 group'
                 >
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className='max-w-full max-h-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300'
+                    className='max-w-full max-h-full object-contain '
                   />
                 </motion.div>
               ))}
