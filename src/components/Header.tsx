@@ -55,23 +55,23 @@ const Header = () => {
       </div>
 
       <div className='container mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-80px)]'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center py-8 lg:py-12'>
 
           {/* Left Side - Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className='flex flex-col justify-center space-y-8'
+            className='flex flex-col justify-center space-y-6'
           >
-            <div className='space-y-6'>
+            <div className='space-y-4'>
               
 
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className='text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900'
+                className='text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900'
               >
                 Transform Your Business with
                 <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mt-2'>
@@ -83,7 +83,7 @@ const Header = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className='text-xl text-gray-600 leading-relaxed max-w-lg'
+                className='text-lg text-gray-600 leading-relaxed max-w-lg'
               >
                 Streamline operations, boost productivity, and drive growth with Qatar's leading ERP implementation partner. Trusted by 500+ businesses across 15+ industries.
               </motion.p>
@@ -94,13 +94,13 @@ const Header = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className='flex flex-col sm:flex-row gap-4'
+              className='flex flex-col sm:flex-row gap-3'
             >
               <Link to="/contact">
                 <motion.div
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className='px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-xl hover:shadow-blue-500/25 transition-all duration-300 text-center inline-block w-full sm:w-auto'
+                  className='px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-xl hover:shadow-blue-500/25 transition-all duration-300 text-center inline-block w-full sm:w-auto'
                 >
                   Get Free Demo →
                 </motion.div>
@@ -110,7 +110,7 @@ const Header = () => {
                 whileHover={{ y: -2, backgroundColor: "rgba(255, 255, 255, 0.9)" }}
                 whileTap={{ scale: 0.95 }}
                 href="#services"
-                className='px-8 py-4 border-2 border-gray-300 bg-white/70 backdrop-blur-sm text-gray-800 font-semibold rounded-xl hover:shadow-lg transition-all duration-300 text-center'
+                className='px-6 py-3 border-2 border-gray-300 bg-white/70 backdrop-blur-sm text-gray-800 font-semibold rounded-xl hover:shadow-lg transition-all duration-300 text-center'
               >
                 Explore Solutions
               </motion.a>
@@ -121,7 +121,7 @@ const Header = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className='grid grid-cols-3 gap-8 pt-8 border-t border-gray-200'
+              className='grid grid-cols-3 gap-6 pt-6 border-t border-gray-200'
             >
               {[
                 { number: '1000+', label: 'Happy Clients' },
@@ -129,8 +129,8 @@ const Header = () => {
                 { number: '12+', label: 'Years Experience' }
               ].map((stat, index) => (
                 <div key={index} className='text-center'>
-                  <div className='text-2xl font-bold text-gray-900'>{stat.number}</div>
-                  <div className='text-sm text-gray-600 font-medium'>{stat.label}</div>
+                  <div className='text-xl font-bold text-gray-900'>{stat.number}</div>
+                  <div className='text-xs text-gray-600 font-medium'>{stat.label}</div>
                 </div>
               ))}
             </motion.div>
@@ -251,11 +251,11 @@ const Header = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className='mt-1 pb-16'
+          className='mt-8 pb-8'
         >
           <div className='text-center mb-8'>
             <p className='text-sm font-semibold text-gray-500 uppercase tracking-wider'>
-              TRUSTED BY:
+              TRUSTED BY
             </p>
           </div>
           
@@ -270,7 +270,7 @@ const Header = () => {
                   ease: "linear",
                 },
               }}
-              className='flex space-x-12'
+              className='flex space-x-8'
               style={{ width: `${clientLogos.length * 200}px` }}
             >
               {/* Duplicate logos for seamless loop */}
@@ -278,12 +278,12 @@ const Header = () => {
                 <motion.div
                   key={`${client.name}-${index}`}
                   whileHover={{ scale: 1.1 }}
-                  className='flex-shrink-0 w-32 h-16 flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-lg border border-white/20 shadow-sm hover:shadow-md transition-all duration-300 group'
+                  className='flex-shrink-0 w-28 h-12 flex items-center justify-center transition-all duration-300 group'
                 >
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className='max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300'
+                    className='max-w-full max-h-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300'
                   />
                 </motion.div>
               ))}
