@@ -17,7 +17,7 @@ import hardnsoft from '../assets/clients/hardnsoft.png'
 import lusail from '../assets/clients/lusailinsurance.png'
 import mubarak from '../assets/clients/mubarak.png'
 import royalmark from '../assets/clients/royalmark.png'
-import techstar from '../assets/clients/techstar.png'
+// import techstar from '../assets/clients/techstar.png'
 import topex from '../assets/clients/topex.png'
 import topsy from '../assets/clients/topsy.png'
 import zienpharma from '../assets/clients/zienpharma.png'
@@ -39,7 +39,7 @@ const Header = () => {
     { name: 'Lusail Insurance', logo: lusail },
     { name: 'Mubarak', logo: mubarak },
     { name: 'Royal Mark', logo: royalmark },
-    { name: 'Tech Star', logo: techstar },
+    // { name: 'Tech Star', logo: techstar },
     { name: 'Topex', logo: topex },
     { name: 'Topsy', logo: topsy },
     { name: 'Zien Pharma', logo: zienpharma },
@@ -87,7 +87,7 @@ const Header = () => {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className='text-lg text-gray-600 leading-relaxed max-w-lg'
               >
-                Streamline operations, boost productivity, and drive growth with Qatar's leading ERP implementation partner. Trusted by 500+ businesses across 15+ industries.
+                Streamline operations, boost productivity, and drive growth with Qatar's leading ERP implementation partner. Trusted by 1000+ businesses across 15+ industries.
               </motion.p>
             </div>
 
