@@ -2,7 +2,48 @@ import Navbar from './Navbar'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
+// Import client logos
+import alraiqa from '../assets/clients/al raiqa.jpg'
+import alrawabi from '../assets/clients/AL RAWABI GROUP.png'
+import aliftrading from '../assets/clients/aliftrading.jpg'
+import aljazeera from '../assets/clients/aljazeeera.jpg'
+import asianbc from '../assets/clients/asianbc.jpg'
+import bestcare from '../assets/clients/best care pharmacy.jpg'
+import bluebell from '../assets/clients/bluebell.jpg'
+import chittulli from '../assets/clients/chittulli.jpg'
+import fifitrading from '../assets/clients/fifi trading.jpg'
+import goodwill from '../assets/clients/goodwill.jpg'
+import hardnsoft from '../assets/clients/hardnsoft.jpg'
+import lusail from '../assets/clients/lusailinsurance.jpg'
+import mubarak from '../assets/clients/mubarak.jpg'
+import royalmark from '../assets/clients/royalmark.jpg'
+import techstar from '../assets/clients/techstar.jpg'
+import topex from '../assets/clients/topex.jpg'
+import topsy from '../assets/clients/topsy.jpg'
+import zienpharma from '../assets/clients/zienpharma.jpg'
+
 const Header = () => {
+  const clientLogos = [
+    { name: 'Al Raiqa', logo: alraiqa },
+    { name: 'Al Rawabi Group', logo: alrawabi },
+    { name: 'Alif Trading', logo: aliftrading },
+    { name: 'Al Jazeera', logo: aljazeera },
+    { name: 'Asian BC', logo: asianbc },
+    { name: 'Best Care Pharmacy', logo: bestcare },
+    { name: 'Blue Bell', logo: bluebell },
+    { name: 'Chittulli', logo: chittulli },
+    { name: 'Fifi Trading', logo: fifitrading },
+    { name: 'Goodwill', logo: goodwill },
+    { name: 'Hard & Soft', logo: hardnsoft },
+    { name: 'Lusail Insurance', logo: lusail },
+    { name: 'Mubarak', logo: mubarak },
+    { name: 'Royal Mark', logo: royalmark },
+    { name: 'Tech Star', logo: techstar },
+    { name: 'Topex', logo: topex },
+    { name: 'Topsy', logo: topsy },
+    { name: 'Zien Pharma', logo: zienpharma }
+  ]
+
   return (
     <section id="home" className='min-h-screen w-full bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden pt-20'>
       <Navbar/>
@@ -204,6 +245,51 @@ const Header = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Client Logo Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className='mt-16 pb-16'
+        >
+          <div className='text-center mb-8'>
+            <p className='text-sm font-semibold text-gray-500 uppercase tracking-wider'>
+              TRUSTED BY:
+            </p>
+          </div>
+          
+          <div className='relative overflow-hidden'>
+            <motion.div
+              animate={{ x: [0, -50 * clientLogos.length] }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 30,
+                  ease: "linear",
+                },
+              }}
+              className='flex space-x-12'
+              style={{ width: `${clientLogos.length * 200}px` }}
+            >
+              {/* Duplicate logos for seamless loop */}
+              {[...clientLogos, ...clientLogos].map((client, index) => (
+                <motion.div
+                  key={`${client.name}-${index}`}
+                  whileHover={{ scale: 1.1 }}
+                  className='flex-shrink-0 w-32 h-16 flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-lg border border-white/20 shadow-sm hover:shadow-md transition-all duration-300 group'
+                >
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className='max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300'
+                  />
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
