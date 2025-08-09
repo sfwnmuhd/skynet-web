@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Services from './components/Services'
 import About from './components/About'
 import Industries from './components/Industries'
+import Blog from './components/Blog'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
@@ -16,6 +17,8 @@ import ItSupportSolution from './pages/ItSupportSolution'
 import ContactPage from './pages/ContactPage'
 import BookDemo from './pages/BookDemo'
 import AboutPage from './pages/AboutPage'
+import BlogPage from './pages/BlogPage'
+import BlogPost from './pages/BlogPost'
 
 // Industry pages
 import {
@@ -45,6 +48,7 @@ const App = () => {
               {/* <Clients/> */}
               <Services/>
               <Industries/>
+              <Blog/>
               <Contact/>
               <Footer/>
             </>
@@ -58,6 +62,8 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/book-demo" element={<BookDemo />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
 
           {/* Industry Routes */}
           <Route path="/industries/garage" element={<Garage />} />
