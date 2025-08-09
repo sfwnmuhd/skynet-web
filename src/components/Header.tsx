@@ -280,12 +280,12 @@ const Header = () => {
                 <motion.div
                   key={`${client.name}-${index}`}
                   
-                  className='flex-shrink-0 w-28 h-12 flex items-center justify-center transition-all duration-300 group'
+                  className='flex-shrink-0 w-28 h-16 flex items-center justify-center transition-all duration-300 group'
                 >
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className='max-w-full max-h-full object-contain filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-300'
+                    className='max-w-full max-h-full object-contain '
                   />
                 </motion.div>
               ))}
