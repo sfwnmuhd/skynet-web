@@ -17,14 +17,56 @@ import {
 const Industries = () => {
   const industries = [
     {
+      icon: <Store className="w-16 h-16" />,
+      title: "Wholesale",
+      description: "Bulk order processing, inventory and distribution management, invoicing, and customer account systems for wholesale businesses."
+    },
+    {
+      icon: <ShoppingBag className="w-16 h-16" />,
+      title: "Retail",
+      description: "Billing and POS software, inventory and supplier management, and CRM tools to streamline daily operations for retail stores."
+    },
+    {
+      icon: <Store className="w-16 h-16" />,
+      title: "Hypermarket",
+      description: "Integrated billing, stock management, loyalty programs, and multi-department coordination tools for hypermarkets and large retail outlets."
+    },
+    {
+      icon: <ShoppingCart className="w-16 h-16" />,
+      title: "Grocery",
+      description: "POS systems, stock management, customer loyalty programs, and online ordering solutions tailored for grocery stores."
+    },
+    {
+      icon: <Handshake className="w-16 h-16" />,
+      title: "SMEs",
+      description: "Customizable ERP solutions, accounting, CRM, Payroll, and inventory management tailored for small and medium-sized enterprises."
+    },  
+    {
+      icon: <Hotel className="w-16 h-16" />,
+      title: "Restaurant",
+      description: "POS systems, kitchen order ticketing, table reservation, and inventory control solutions for efficient restaurant operations."
+    },
+    {
+      icon: <Coffee className="w-16 h-16" />,
+      title: "Cafe",
+      description: "Point-of-sale systems, menu management, order tracking, and customer loyalty solutions for cafes and small eateries."
+    },
+    {
       icon: <CarFront className="w-16 h-16" />,
       title: "Garage",
-      description: "Workshop management systems, job card tracking, inventory control, and customer service tools for automotive service centers and garages."
+      description: "Garage and Service management systems, job card tracking, inventory control, and customer service tools for automotive service centers and garages."
     },
+    {
+      icon: <Factory className="w-16 h-16" />,
+      title: "Manufacturing",
+      description: "End-to-end ERP for production planning, raw material tracking, quality control, and supply chain integration for manufacturers."
+    },
+
+    
     {
       icon: <Dumbbell className="w-16 h-16" />,
       title: "Gym",
-      description: "Membership management, attendance tracking, fitness class scheduling, and billing systems for gyms and fitness centers."
+      description: "Membership management, attendance tracking, Door access integration, fitness class scheduling, and billing systems for gyms and fitness centers."
     },
     {
       icon: <WashingMachine className="w-16 h-16" />,
@@ -35,49 +77,7 @@ const Industries = () => {
       icon: <Shirt className="w-16 h-16" />,
       title: "Tailoring",
       description: "Order tracking, fabric inventory management, customer measurements database, and delivery scheduling for tailoring and custom apparel businesses."
-    },
-    {
-      icon: <Factory className="w-16 h-16" />,
-      title: "Manufacturing",
-      description: "End-to-end ERP for production planning, raw material tracking, quality control, and supply chain integration for manufacturers."
-    },
-    {
-      icon: <ShoppingCart className="w-16 h-16" />,
-      title: "Grocery",
-      description: "POS systems, stock management, customer loyalty programs, and online ordering solutions tailored for grocery stores."
-    },
-    {
-      icon: <ShoppingBag className="w-16 h-16" />,
-      title: "Retail",
-      description: "Billing and POS software, inventory and supplier management, and CRM tools to streamline daily operations for retail stores."
-    },
-    {
-      icon: <Store className="w-16 h-16" />,
-      title: "Wholesale",
-      description: "Bulk order processing, inventory and distribution management, invoicing, and customer account systems for wholesale businesses."
-    },
-    {
-      icon: <Hotel className="w-16 h-16" />,
-      title: "Restaurant",
-      description: "POS systems, kitchen order ticketing, table reservation, and inventory control solutions for efficient restaurant operations."
-    },
-    {
-      icon: <Store className="w-16 h-16" />,
-      title: "Hypermarket",
-      description: "Integrated billing, stock management, loyalty programs, and multi-department coordination tools for hypermarkets and large retail outlets."
-    },
-    {
-      icon: <Handshake className="w-16 h-16" />,
-      title: "SMEs",
-      description: "Customizable ERP solutions, accounting, CRM, HR, and inventory management tailored for small and medium-sized enterprises."
-    },
-    {
-      icon: <Coffee className="w-16 h-16" />,
-      title: "Cafe",
-      description: "Point-of-sale systems, menu management, order tracking, and customer loyalty solutions for cafes and small eateries."
-    },
-
-
+    }
   ]
 
   return (

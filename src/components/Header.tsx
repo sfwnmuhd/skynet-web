@@ -57,7 +57,7 @@ const Header = () => {
       </div>
 
       <div className='container mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center py-8 lg:py-12'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-8 lg:pt-20'>
 
           {/* Left Side - Content */}
           <motion.div
@@ -85,9 +85,9 @@ const Header = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className='text-lg text-gray-600 leading-relaxed max-w-lg'
+                className='text-lg text-gray-600 leading-relaxed max-w-2xl'
               >
-                Streamline operations, boost productivity, and drive growth with Qatar's leading ERP implementation partner. Trusted by 1000+ businesses across 15+ industries.
+                Skynet Solution Qatar – trusted ERP partner for 1300+ businesses. Streamline operations with our powerful Accounting & Inventory ERP solutions.
               </motion.p>
             </div>
 
@@ -126,9 +126,9 @@ const Header = () => {
               className='grid grid-cols-3 gap-6 pt-6 border-t border-gray-200'
             >
               {[
-                { number: '1000+', label: 'Happy Clients' },
+                { number: '1300+', label: 'Happy Clients' },
                 { number: '15+', label: 'Industries' },
-                { number: '12+', label: 'Years Experience' }
+                { number: '13+', label: 'Years Experience' }
               ].map((stat, index) => (
                 <div key={index} className='text-center'>
                   <div className='text-xl font-bold text-gray-900'>{stat.number}</div>
@@ -184,7 +184,7 @@ const Header = () => {
                   {/* Quick Stats */}
                   <div className='grid grid-cols-2 gap-4'>
                     <div className='bg-green-50 rounded-lg p-3'>
-                      <div className='text-2xl font-bold text-green-600'>₹2.4M</div>
+                      <div className='text-2xl font-bold text-green-600'>QR 2.4M</div>
                       <div className='text-xs text-gray-600'>Total Sales</div>
                     </div>
                     <div className='bg-blue-50 rounded-lg p-3'>
@@ -253,7 +253,7 @@ const Header = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className='mt-20 pb-8'
+          className='mt-40 pb-8'
         >
           <div className='text-center mb-8'>
             <p className='text-sm font-semibold text-gray-500 uppercase tracking-wider'>

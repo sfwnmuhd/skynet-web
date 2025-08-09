@@ -19,7 +19,7 @@ import Footer from '../components/Footer'
 
 const AboutPage = () => {
   const stats = [
-    { number: '12+', label: 'Years', subtitle: 'Industry Excellence' },
+    { number: '13+', label: 'Years', subtitle: 'Industry Excellence' },
     { number: '1000+', label: '', subtitle: 'Satisfied Clients' },
     { number: '15+', label: '', subtitle: 'Industries Served' },
     { number: '99%', label: '', subtitle: 'Client Satisfaction' },
@@ -117,7 +117,7 @@ const AboutPage = () => {
             </h1>
             <p className='text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8'>
               Skynet Solution is Qatar's premier atACC ERP implementation partner, delivering comprehensive
-              business management solutions for over 12 years. Transform your business with the best ERP software in Qatar.
+              business management solutions for over 13 years. Transform your business with the best ERP software in Qatar.
             </p>
             <div className='flex flex-wrap justify-center gap-4 text-lg font-semibold text-gray-700'>
               <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>atACC ERP Qatar</span>

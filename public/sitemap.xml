@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://skynet-solution.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://skynet-solution.com/about</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://skynet-solution.com/services</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/services/erp-solutions</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/services/web-development</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/services/mobile-apps</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/services/ecommerce-solutions</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/services/it-support-solutions</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/services/it-consulting</loc>
+  </url>
+
+  <!-- Industries -->
+  <url>
+    <loc>https://skynet-solution.com/industries</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/garage</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/gym</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/laundry</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/tailoring</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/manufacturing</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/grocery</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/retail</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/wholesale</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/restaurant</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/hypermarket</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/smes</loc>
+  </url>
+  <url>
+    <loc>https://skynet-solution.com/industries/cafes</loc>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://skynet-solution.com/contact</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

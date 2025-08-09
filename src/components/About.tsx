@@ -22,7 +22,7 @@ const About = () => {
   ]
 
   const achievements = [
-    "Over 12 Years of Industry Excellence",
+    "Over 13 Years of Industry Excellence",
     "Trusted IT Partner for Leading Qatari Enterprises",
     "Reliable IT Infrastructure, Unmatched Support",
     "Quality-Focused IT Service Provider"
@@ -39,9 +39,8 @@ const About = () => {
           className='text-center mb-16'
         >
           <h2 className='text-5xl font-bold text-gray-800 mb-6'>About Skynet Solution</h2>
-          <p className='text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed'>
-            With over 12 years of experience, we are Qatar's leading provider of innovative ERP solutions 
-            and professional web development services, helping businesses transform and grow.
+          <p className='text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed'>
+            Skynet Solution is a leading IT solution provider in Qatar with over 13 years of experience delivering customized technology services to startups, entrepreneurs, and enterprises across various industries. Our flagship product, atACC ERP, offers robust accounting and inventory management modules, making it the top ERP software in Qatar to enhance business efficiency and streamline operations for all industries.
           </p>
         </motion.div>
 

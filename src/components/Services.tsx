@@ -16,7 +16,7 @@ const Services = () => {
       icon: <Database className="w-12 h-12" />,
       title: "ERP Solutions",
       description: "Comprehensive enterprise resource planning systems that integrate all your business processes into a single, efficient platform.",
-      features: ["Financial Management", "Inventory Control", "HR Management", "CRM Integration"]
+      features: ["Financial Management", "Inventory Control", "Payroll Management", "CRM Integration"]
     },
     {
       icon: <Globe className="w-12 h-12" />,

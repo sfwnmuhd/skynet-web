@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
 import { 
   Mail, 
   Phone, 
@@ -30,6 +31,25 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Handle form submission here
+    emailjs.send(
+    'service_4xosn7t',
+    'template_md0xokd',
+    formData,
+    'JrROPH_w_zH8iYx_5'
+  ).then(() => {
+    setIsSubmitted(true)
+    setTimeout(() => setIsSubmitted(false), 3000)
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      phone: '',
+      service: '',
+      message: ''
+    })
+  }).catch((error) => {
+    console.error('Failed to send email:', error)
+  })
     setIsSubmitted(true)
     setTimeout(() => setIsSubmitted(false), 3000)
   }
@@ -62,8 +82,9 @@ const Contact = () => {
     "Web Development",
     "Mobile Applications",
     "E-commerce Solutions",
-    "Business Intelligence",
+    "IT Support Solution",
     "IT Consulting"
+    ,"Others"
   ]
 
   return (
@@ -124,7 +145,7 @@ const Contact = () => {
               <ul className='space-y-3'>
                 <li className='flex items-center'>
                   <CheckCircle className='w-5 h-5 mr-3' />
-                  12+ years of proven experience
+                  13+ years of proven experience
                 </li>
                 <li className='flex items-center'>
                   <CheckCircle className='w-5 h-5 mr-3' />

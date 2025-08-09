@@ -74,8 +74,8 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '/', onClick: scrollToTop },
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '/#services', hasDropdown: true, dropdownItems: serviceItems },
-    { name: 'Industries', href: '/#industries', hasDropdown: true, dropdownItems: industryItems },
+    { name: 'Services', href: '/services', hasDropdown: true, dropdownItems: serviceItems },
+    { name: 'Industries', href: '/industries', hasDropdown: true, dropdownItems: industryItems },
     { name: 'Contact', href: '/contact' },
   ]
 
@@ -205,7 +205,7 @@ const Navbar = () => {
               />
             </div>
 
-            <div className='flex flex-col h-full bg-white/95 backdrop-blur-sm'>
+            <div className='flex flex-col  bg-white backdrop-blur-sm'>
               <ul className='flex flex-col gap-4 p-6 flex-1'>
                 {navItems.map((item) => (
                   <li key={item.name}>
