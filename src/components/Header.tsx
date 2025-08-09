@@ -263,29 +263,29 @@ const Header = () => {
           
           <div className='relative overflow-hidden'>
             <motion.div
-              animate={{ x: [0, -50 * clientLogos.length] }}
+              animate={{ x: [0, -200 * clientLogos.length] }}
               transition={{
                 x: {
                   repeat: Infinity,
                   repeatType: "loop",
-                  duration: 30,
+                  duration: 60,
                   ease: "linear",
                 },
               }}
-              className='flex space-x-8'
-              style={{ width: `${clientLogos.length * 200}px` }}
+              className='flex space-x-8 will-change-transform'
+              style={{ width: `${clientLogos.length * 400}px` }}
             >
-              {/* Duplicate logos for seamless loop */}
-              {[...clientLogos, ...clientLogos].map((client, index) => (
+              {/* Triple logos for seamless infinite loop */}
+              {[...clientLogos, ...clientLogos, ...clientLogos].map((client, index) => (
                 <motion.div
                   key={`${client.name}-${index}`}
                   
-                  className='flex-shrink-0 w-28 h-16 flex items-center justify-center transition-all duration-300 group'
+                  className='flex-shrink-0 w-28 h-12 flex items-center justify-center transition-all duration-300 group'
                 >
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className='max-w-full max-h-full object-contain '
+                    className='max-w-full max-h-full object-contain filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-300'
                   />
                 </motion.div>
               ))}
