@@ -47,7 +47,7 @@ const Header = () => {
   ]
 
   return (
-    <section id="home" className='min-h-screen w-full bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden pt-20'>
+    <section id="home" className='min-h-screen w-full bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden pt-28'>
       <Navbar/>
 
       {/* Background Elements */}
@@ -57,7 +57,7 @@ const Header = () => {
       </div>
 
       <div className='container mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-8 lg:pt-20'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-8 lg:pt-24'>
 
           {/* Left Side - Content */}
           <motion.div
@@ -76,7 +76,7 @@ const Header = () => {
                 className='text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900'
               >
                 Transform Your Business with 
-                <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mt-2'>
+                <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mt-6'>
                   Skynet Solution Qatar
                 </span>
               </motion.h1>
@@ -98,7 +98,7 @@ const Header = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className='flex flex-col sm:flex-row gap-3'
+              className='flex flex-col sm:flex-row gap-6'
             >
               <Link to="/contact">
                 <motion.div
