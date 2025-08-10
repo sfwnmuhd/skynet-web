@@ -20,7 +20,7 @@ import Footer from '../components/Footer'
 const AboutPage = () => {
   const stats = [
     { number: '13+', label: 'Years', subtitle: 'Industry Excellence' },
-    { number: '1000+', label: '', subtitle: 'Satisfied Clients' },
+    { number: '1300+', label: '', subtitle: 'Satisfied Clients' },
     { number: '15+', label: '', subtitle: 'Industries Served' },
     { number: '99%', label: '', subtitle: 'Client Satisfaction' },
   ]
@@ -29,11 +29,11 @@ const AboutPage = () => {
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Qatar's Leading atACC ERP Partner",
-      description: "Official authorized partner for atAcc ERP implementation in Qatar, providing comprehensive business solutions."
+      description: "Official authorized partner for atACC ERP implementation in Qatar, providing comprehensive business solutions."
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Expert Implementation Team",
+      title: "Expert Implementation & Development Team",
       description: "Certified consultants with extensive experience in ERP implementations across various industries in Qatar."
     },
     {
@@ -49,16 +49,12 @@ const AboutPage = () => {
   ]
 
   const erpFeatures = [
-    "Comprehensive Accounting & Financial Management",
-    "Advanced Inventory & Warehouse Management",
-    "Human Resources & Payroll Management",
-    "Customer Relationship Management (CRM)",
-    "Project & Service Management",
-    "Manufacturing & Production Control",
-    "Point of Sale (POS) Integration",
-    "Multi-location & Multi-currency Support",
-    "Real-time Reporting & Analytics",
-    "Mobile Accessibility & Cloud Support"
+    "ERP Solutions",
+    "Web Development",
+    "Mobile Applications",
+    "E-Commerce Solutions",
+    "IT Support Solutions",
+    "IT Consulting"
   ]
 
   const achievements = [
@@ -103,27 +99,26 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
             className='text-center'
           >
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               className='inline-flex items-center px-6 py-3 bg-blue-100 text-blue-800 rounded-full text-lg font-medium mb-8'
             >
               Qatar's #1 ERP Implementation Partner
-            </motion.div>
+            </motion.div> */}
 
             <h1 className='text-4xl md:text-6xl font-bold text-gray-900 mb-6'>
-              Best <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600'>ERP Software</span> in Qatar
+             <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600'>About</span> Us
             </h1>
-            <p className='text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8'>
-              Skynet Solution is Qatar's premier atACC ERP implementation partner, delivering comprehensive
-              business management solutions for over 13 years. Transform your business with the best ERP software in Qatar.
+            <p className='text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8'>
+              Skynet Solution is Qatar’s trusted IT partner, delivering ERP systems, IT infrastructure, and web development services that enhance efficiency, boost productivity, and drive business growth.
             </p>
-            <div className='flex flex-wrap justify-center gap-4 text-lg font-semibold text-gray-700'>
+            {/* <div className='flex flex-wrap justify-center gap-4 text-lg font-semibold text-gray-700'>
               <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>atACC ERP Qatar</span>
               <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>Best ERP Software Qatar</span>
               <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>ERP Implementation</span>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </section>
@@ -162,16 +157,18 @@ const AboutPage = () => {
               viewport={{ once: true }}
             >
               <h2 className='text-4xl font-bold text-gray-800 mb-6'>
-                Why atACC ERP is the <span className='text-[#0075bb]'>Best ERP Software in Qatar</span>
+                Why <span className='text-[#0075bb]'>Skynet Solution</span>
               </h2>
               <p className='text-lg text-gray-600 mb-8 leading-relaxed'>
-                atACC ERP by Atlanta IT Solutions is a comprehensive Enterprise Resource Planning solution 
-                designed specifically for businesses in Qatar and the Middle East. As the leading atAcc ERP 
-                implementation partner in Qatar, Skynet Solution has successfully deployed this powerful 
-                business management system across 1000+ organizations.
+                Skynet Solution delivers over 13 years of expertise in ERP systems, IT infrastructure, and professional web development services in Qatar. We create customized technology solutions that streamline operations, boost productivity, and strengthen your online presence—helping businesses thrive in today’s competitive market.
+              </p>
+
+              <h3 className='text-2xl font-bold text-gray-800 mb-6'>Our Mission & Vision</h3>
+              <p className='text-lg text-gray-600 mb-8 leading-relaxed'>
+                Our mission is to provide reliable, scalable, and future-ready IT and web development solutions that drive business growth across Qatar. Our vision is to be the leading provider of ERP systems, IT infrastructure, and digital transformation services, empowering businesses to innovate and succeed in the digital era.
               </p>
               
-              <div className='space-y-4 mb-8'>
+              {/* <div className='space-y-4 mb-8'>
                 {erpFeatures.slice(0, 5).map((feature, index) => (
                   <motion.div
                     key={index}
@@ -185,13 +182,13 @@ const AboutPage = () => {
                     <span className='text-gray-700 font-medium'>{feature}</span>
                   </motion.div>
                 ))}
-              </div>
+              </div> */}
 
               <Link
                 to="/contact"
                 className='inline-flex items-center space-x-2 bg-[#0075bb] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#005a94] transition-colors duration-300'
               >
-                <span>Get Free atACC ERP Demo</span>
+                <span>Get In Touch</span>
                 <ArrowRight className='w-5 h-5' />
               </Link>
             </motion.div>
@@ -203,9 +200,9 @@ const AboutPage = () => {
               viewport={{ once: true }}
               className='bg-white p-8 rounded-2xl shadow-2xl'
             >
-              <h3 className='text-2xl font-bold text-gray-800 mb-6'>atACC ERP Key Modules</h3>
+              <h3 className='text-2xl font-bold text-gray-800 mb-6'>Our Services</h3>
               <div className='grid grid-cols-1 gap-4'>
-                {erpFeatures.slice(5).map((feature, index) => (
+                {erpFeatures.map((feature, index) => (
                   <div key={index} className='flex items-center space-x-3 p-3 bg-gray-50 rounded-lg'>
                     <div className='w-3 h-3 bg-[#0075bb] rounded-full'></div>
                     <span className='text-gray-700 font-medium text-sm'>{feature}</span>
@@ -228,11 +225,10 @@ const AboutPage = () => {
             className='text-center mb-16'
           >
             <h2 className='text-4xl font-bold text-gray-800 mb-6'>
-              Why Choose Skynet Solution for <span className='text-[#0075bb]'>atACC ERP in Qatar</span>
+              Why Choose Skynet Solution
             </h2>
             <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
-              As Qatar's most trusted atACC ERP implementation partner, we bring unmatched expertise 
-              and proven success in digital transformation.
+              We provide end-to-end solutions including ERP systems, web development, IT infrastructure setup, software development, and digital transformation consulting—tailored to meet the unique needs of each client.
             </p>
           </motion.div>
 
@@ -269,7 +265,7 @@ const AboutPage = () => {
           >
             <h2 className='text-4xl font-bold mb-6'>Our Achievements & Recognition</h2>
             <p className='text-xl opacity-90 max-w-3xl mx-auto'>
-              Recognized as the leading ERP implementation partner in Qatar with a track record of excellence.
+              Recognized as the leading ERP implementation partner in Qatar with a proven track record of excellence.
             </p>
           </motion.div>
 
@@ -295,7 +291,7 @@ const AboutPage = () => {
       </section>
 
       {/* Industries We Serve */}
-      <section className='py-20 bg-gray-50'>
+      {/* <section className='py-20 bg-gray-50'>
         <div className='container mx-auto px-6'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -315,9 +311,9 @@ const AboutPage = () => {
 
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
             {[
-              'Manufacturing', 'Retail & Wholesale', 'Hospitality', 'Healthcare',
-              'Construction', 'Automotive', 'Education', 'Food & Beverage',
-              'Real Estate', 'Logistics', 'Professional Services', 'Government'
+              'Wholesale & Retail',  'Hypyermarket', 'Grocery',
+              'Restaurant', 'Cafe', 'Garage', 'Service Sector',
+              'Manufacturing', 'SMEs', 'Gym', 'Laundry','Tailoring'
             ].map((industry, index) => (
               <motion.div
                 key={index}
@@ -332,7 +328,7 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className='py-20 bg-white'>
@@ -348,7 +344,7 @@ const AboutPage = () => {
               Ready to Transform Your Business with the Best ERP Software in Qatar?
             </h2>
             <p className='text-xl text-gray-600 mb-8 max-w-3xl mx-auto'>
-              Join 1000+ successful businesses in Qatar who have transformed their operations with atACC ERP. 
+              Join 1300+ successful businesses in Qatar who have transformed their operations with atACC ERP. 
               Get started with a free consultation and demo today.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
@@ -359,13 +355,7 @@ const AboutPage = () => {
                 <Calendar className='w-5 h-5' />
                 <span>Book Free Demo</span>
               </Link>
-              <Link 
-                to="/contact"
-                className='inline-flex items-center space-x-2 border-2 border-[#0075bb] text-[#0075bb] px-8 py-4 rounded-xl font-semibold hover:bg-[#0075bb] hover:text-white transition-colors duration-300'
-              >
-                <Users className='w-5 h-5' />
-                <span>Contact Our Experts</span>
-              </Link>
+              
             </div>
           </motion.div>
         </div>

@@ -7,7 +7,7 @@ const FloatingWhatsApp = () => {
 
   const handleWhatsAppClick = () => {
     if (showChatView) {
-      window.open('https://wa.me/9747651525', '_blank')
+      window.open('https://wa.me/97477651525', '_blank')
     } else {
       setShowChatView(true)
     }

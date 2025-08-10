@@ -18,8 +18,8 @@ const ERPSolutions = () => {
   const features = [
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Human Resource Management",
-      description: "Complete HR solution with payroll, attendance, and employee management"
+      title: "Payroll Management",
+      description: "Complete payroll solution with accurate salary processing, attendance integration, and compliance management to simplify your payroll operations."
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
@@ -29,7 +29,7 @@ const ERPSolutions = () => {
     {
       icon: <Database className="w-8 h-8" />,
       title: "Inventory Management",
-      description: "Real-time inventory tracking, stock management, and supply chain optimization"
+      description: "Real-time inventory tracking, efficient stock control, and optimized supply chain management for seamless business operations."
     },
     {
       icon: <Settings className="w-8 h-8" />,
@@ -49,17 +49,18 @@ const ERPSolutions = () => {
   ]
 
   const benefits = [
-    "Reduce operational overhead by up to 30%",
-    "Increase visibility and control across departments",
-    "ERemove data silos for smoother workflows",
-    "Stay compliant with industry regulations",
-    "Customize ERP modules to your business model",
-    "24/7 dedicated support and training included"
+    "Reduce operational costs by up to 30%",
+    "Gain real-time visibility and control across departments",
+    "Eliminate data silos for streamlined workflows",
+    "Maintain compliance with industry regulations",
+    "Customize ERP modules to fit your business model",
+    "Access 24/7 dedicated support and training"
   ]
 
   const industries = [
-    "Manufacturing", "Retail", "Healthcare", "Education", 
-    "Real Estate", "Logistics", "Financial Services", "Hospitality"
+    "Wholesale", "Retail", "Hypermarket", "Grocery", 
+    "SMEs", "Restaurant", "Cafe", "Garage",
+    "Manufacuring","Gym","Laundry","Tailoring "
   ]
 
   return (
@@ -77,10 +78,10 @@ const ERPSolutions = () => {
           >
             <div className="flex items-center justify-center mb-6">
               <Database className="w-16 h-16 text-[#0075bb] mr-4" />
-              <h1 className="text-5xl font-bold text-gray-800">ERP Solutions Powered by atAcc ERP</h1>
+              <h1 className="text-5xl font-bold text-gray-800">ERP Solutions Powered by atACC ERP</h1>
             </div>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Unlock your business’s full potential with Skynet Solution’s atAcc ERP, a modern and powerful enterprise resource planning system built to centralize and optimize all your business operations in one intelligent platform.
+              atACC ERP is the best accounting and inventory management software designed to streamline business operations for companies of all sizes in Qatar. Whether you manage a small business or a large enterprise, atACC ERP delivers efficient financial management, accurate inventory control, and scalable solutions to meet your business needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a
@@ -115,9 +116,9 @@ const ERPSolutions = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Key Features of atAcc ERP</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">Key Features of atACC ERP</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our atAcc ERP system is engineered for performance, scalability, and simplicity—designed to handle everything your business needs.
+              Our atACC ERP system is engineered for performance, scalability, and simplicity—designed to handle everything your business needs.
             </p>
           </motion.div>
 
@@ -152,7 +153,7 @@ const ERPSolutions = () => {
             >
               <h2 className="text-4xl font-bold text-gray-800 mb-6">Why Choose Skynet Solution for ERP?</h2>
               <p className="text-lg text-gray-600 mb-8">
-                We don’t just implement software — we deliver end-to-end digital transformation. Skynet Solution’s expert team ensures that your atAcc ERP setup aligns with your specific business goals.
+                At Skynet Solution, we don’t just implement software — we deliver full digital transformation. Our expert team ensures your atACC ERP setup aligns perfectly with your business goals, helping you: 
               </p>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (

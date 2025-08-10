@@ -64,9 +64,9 @@ const Header = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className='flex flex-col justify-center space-y-6'
+            className='flex flex-col justify-center space-y-10'
           >
-            <div className='space-y-4'>
+            <div className='space-y-6'>
               
 
               <motion.h1
@@ -75,9 +75,9 @@ const Header = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className='text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900'
               >
-                Transform Your Business with
+                Transform Your Business with 
                 <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mt-2'>
-                  atACC ERP Solutions
+                  Skynet Solution Qatar
                 </span>
               </motion.h1>
 
@@ -85,9 +85,9 @@ const Header = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className='text-lg text-gray-600 leading-relaxed max-w-2xl'
+                className='text-lg text-gray-600 leading-relaxed max-w-2xl '
               >
-                Skynet Solution Qatar – trusted ERP partner for 1300+ businesses. Streamline operations with our powerful Accounting & Inventory ERP solutions.
+                Trusted ERP, IT consulting, web & software development partner in Qatar. Empowering businesses with digital transformation, custom solutions, and technology innovation.
               </motion.p>
             </div>
 
