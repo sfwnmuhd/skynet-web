@@ -89,6 +89,8 @@ const Header = () => {
               >
                 Trusted ERP, IT consulting, web & software development partner in Qatar. Empowering businesses with digital transformation, custom solutions, and technology innovation.
               </motion.p>
+
+              
             </div>
 
             {/* CTA Buttons */}
