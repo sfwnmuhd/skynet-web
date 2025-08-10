@@ -257,11 +257,11 @@ const Header = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className='mt-40 pb-8'
         >
-          <div className='text-center mb-8'>
+          {/* <div className='text-center mb-8'>
             <p className='text-sm font-semibold text-gray-500 uppercase tracking-wider'>
               TRUSTED BY
             </p>
-          </div>
+          </div> */}
           
           <div className='relative overflow-hidden'>
             <motion.div
